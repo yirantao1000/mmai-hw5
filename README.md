@@ -48,7 +48,8 @@ parts:
 
 ```
 hw5_submission/
-├── hw5.ipynb                              # main notebook (Parts 1–6)
+├── hw5_yirantao.ipynb                     # main notebook (Parts 1–6)
+├── hw5_yirantao.pdf                       # written report (figures + discussion + tables)
 ├── README.md                              # this file
 ├── .gitignore
 │
@@ -76,12 +77,14 @@ hw5_submission/
 └── langfuse_p3_minimal_trace_v2.png       # Part 5 P3 — alt_minimal alternate
 ```
 
-The written report (figures + discussion + tables) is delivered separately as a
-PDF and is **not** included in this repository.
+The written report `hw5_yirantao.pdf` contains the figures, comparison tables,
+and per-part discussion that the notebook itself does not include — TAs should
+read the PDF as the primary writeup and refer to the notebook for the
+underlying code and raw artifacts.
 
 ## Reproducing the runs
 
-1. Open `hw5.ipynb` in JupyterLab / VS Code / Colab (an A100 is recommended for
+1. Open `hw5_yirantao.ipynb` in JupyterLab / VS Code / Colab (an A100 is recommended for
    speed but not strictly required — the agent itself is API-bound).
 2. Set the following environment variables before running (or supply them via
    the in-notebook `getpass` prompts):
@@ -113,5 +116,5 @@ PDF and is **not** included in this repository.
 The bot uses **mention-only** triggering: it only acts when a user explicitly
 `@`s it. This keeps cost predictable in a shared multi-bot world, avoids false
 triggers from incidental keyword mentions, and composes cleanly with other
-students' bots that also activate on `@`. Full reflection is in the PDF
-writeup; the demo screenshot is `Screenshot.png`.
+students' bots that also activate on `@`. Full reflection is in `hw5_yirantao.pdf`;
+the demo screenshot is `Screenshot.png`.
